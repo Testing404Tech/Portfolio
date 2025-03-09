@@ -138,15 +138,24 @@ section{
 }
 
 
+.card {
+            max-width: 600px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-p {
-    word-wrap: break-word;
-    white-space: normal;
-    overflow-wrap: break-word;
-    max-width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        b {
+            color: #007acc;
+        }
+
 .home{
     min-height: 40vh;
     height: 100%;
