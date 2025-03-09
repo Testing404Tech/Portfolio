@@ -280,6 +280,18 @@ section{
     animation: animate 1s linear infinite;
 }
 
+ .responsive-paragraph {
+        padding: 1rem;
+        max-width: 800px;
+        margin: auto;
+        font-size: calc(16px + 1vw);
+    }
+    @media (max-width: 600px) {
+        .responsive-paragraph {
+            padding: 1rem;
+            font-size: 16px;
+        }
+    }
 
 /* ==================== About section css code ============================ */
 .about{
