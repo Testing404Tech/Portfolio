@@ -137,23 +137,7 @@ section{
     padding: 90px 8%;
 }
 
-        .card {
-            max-width: 90vw;
-            max-height: 90vh;
-            padding: 20px;
-            background-color: black;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow-y: auto;
-        }
-
-        p {
-            color: #333;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        b {
+        
 .home{
     min-height: 40vh;
     height: 100%;
