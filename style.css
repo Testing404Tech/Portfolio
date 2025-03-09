@@ -138,6 +138,15 @@ section{
 }
 
 
+
+p {
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
 .home{
     min-height: 40vh;
     height: 100%;
