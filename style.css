@@ -139,11 +139,23 @@ section{
 
 
 .card {
-            max-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f3f4f6;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .card {
+            max-width: 90vw;
+            max-height: 90vh;
             padding: 20px;
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
         }
 
         p {
@@ -153,9 +165,6 @@ section{
         }
 
         b {
-            color: #007acc;
-        }
-
 .home{
     min-height: 40vh;
     height: 100%;
