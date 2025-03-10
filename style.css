@@ -133,10 +133,9 @@ ul.navlist{
 
 
 /* ==================== home section css code ============================ */
-section{
+/* section{
     padding: 90px 8%;
-}
-
+} */
 
 .unique-container {
     display: flex;
