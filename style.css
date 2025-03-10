@@ -133,15 +133,15 @@ ul.navlist{
 
 
 /* ==================== home section css code ============================ */
-/* section{
+ section{
     padding: 90px 8%;
-} */
+} 
 
 .unique-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 50px;
     width: 100%;
     height: 100vh;
 }
