@@ -138,11 +138,10 @@ ul.navlist{
 } 
 
 .unique-container {
-    padding: 10px 20px; /* Reduced top/bottom padding */
     display: flex;
     justify-content: center;
     align-items: center;
-/*     padding: 20px; */
+    padding: 20px;
     width: 100%;
     height: 100vh;
 }
