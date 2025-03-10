@@ -138,41 +138,29 @@ ul.navlist{
 } 
 
 .unique-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+    padding: 10px 20px; /* Reduced top/bottom padding */
     width: 100%;
-    height: 100vh;
+    box-sizing: border-box; /* Includes padding in width/height */
 }
 
 .unique-card {
     max-width: 100%;
     width: 100%;
+    margin: 0 auto; /* Center horizontally */
     padding: 20px;
     border-radius: 16px;
-    background-color: black;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border: none;
-    margin: 10px 0;
-}
-
-p {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
 }
 
 @media screen and (min-width: 1024px) {
     .unique-card {
-        margin-left: 0;
-        margin-right: 0;
+        max-width: 600px; /* Constrain width on larger screens */
         padding-left: 0;
         padding-right: 0;
     }
 }
-
 .home{
     min-height: 40vh;
     height: 100%;
@@ -332,8 +320,6 @@ p {
         /* border: 2px solid gainsboro; */
 
 }
-
-
 
 .about .about-img .aboutHero{
     width: 40vw;
