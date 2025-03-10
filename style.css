@@ -152,9 +152,10 @@ section{
     width: 100%;
     padding: 20px;
     border-radius: 16px;
-    background-color: black;
+    background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: none;
 }
 
 p {
@@ -162,6 +163,7 @@ p {
     color: #333;
     line-height: 1.6;
 }
+
 .home{
     min-height: 40vh;
     height: 100%;
