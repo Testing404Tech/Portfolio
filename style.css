@@ -152,11 +152,11 @@ section{
     width: 100%;
     padding: 20px;
     border-radius: 16px;
-    background-color: white;
+    background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     border: none;
-    margin: 0;
+    margin: 10px 0;
 }
 
 p {
@@ -167,10 +167,13 @@ p {
 
 @media screen and (min-width: 1024px) {
     .unique-card {
-        padding-left: 20vw;
-        padding-right: 20vw;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
+
 .home{
     min-height: 40vh;
     height: 100%;
