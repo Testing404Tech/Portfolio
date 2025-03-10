@@ -160,7 +160,7 @@ ul.navlist{
 
 p {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #B0B0B0;
     line-height: 1.6;
 }
 
@@ -172,7 +172,6 @@ p {
         padding-right: 0;
     }
 }
-
 .home{
     min-height: 40vh;
     height: 100%;
