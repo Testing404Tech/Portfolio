@@ -141,21 +141,21 @@ ul.navlist{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px; /* Reduced padding */
     width: 100%;
-    min-height: 100vh;
+    height: calc(100vh - 40px); /* Reduce height to create space at top and bottom */
 }
 
 .unique-card {
     max-width: 100%;
     width: 100%;
-    padding: 20px;
+    padding: 10px; /* Reduced padding inside the card */
     border-radius: 16px;
     background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     border: none;
-    margin: 10px 0;
+    margin: 5px 0; /* Reduced margin */
 }
 
 p {
@@ -172,6 +172,8 @@ p {
         padding-right: 0;
     }
 }
+
+
 .home{
     min-height: 40vh;
     height: 100%;
