@@ -138,17 +138,26 @@ section{
 }
 
 
-.home{
-    min-height: 0vh;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    grid-gap: 4em;
-    background: #000;
-    
+.home {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Ensures text alignment */
+  min-height: 100vh; /* Makes sure it covers the full viewport */
+  padding: 20px; /* Prevents text from touching screen edges */
 }
+
+.hero-info {
+  max-width: 800px; /* Limits text width for better readability */
+  width: 100%;
+}
+
+.hero-info p {
+  text-align: center;
+  font-size: 18px; /* Adjust font size for readability */
+  line-height: 1.6;
+}
+
 
 /* ==================== Services section css code ============================ */
 /* .services{
@@ -485,4 +494,11 @@ footer{
         width: 100%;
         padding: 13px;
     }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 50px 20px; /* Adds more space on smaller screens */
+  }
 }
