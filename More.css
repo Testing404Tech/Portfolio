@@ -133,22 +133,7 @@ ul.navlist{
 
 
 /* ==================== home section css code ============================ */
-section{
-    padding: 20px 3%;
-}
 
-
-.home{
-    min-height: 0vh;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    grid-gap: 4em;
-    background: #000;
-    
-}
 
 /* ==================== Services section css code ============================ */
 /* .services{
