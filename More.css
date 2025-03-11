@@ -499,6 +499,6 @@ footer{
 @media (max-width: 768px) {
   .home {
     flex-direction: column;
-    padding: 10px 10px; /* Adds more space on smaller screens */
+    padding: 50px 30px; /* Adds more space on smaller screens */
   }
 }
