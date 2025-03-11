@@ -140,36 +140,52 @@ ul.navlist{
 .unique-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 10px; /* Reduced padding */
+    align-items: center; /* Centers vertically within its height */
+    padding: 10px; /* Keep minimal padding */
     width: 100%;
-    height: calc(50vh - 40px); /* Reduce height to create space at top and bottom */
+    min-height: 100vh; /* Full viewport height to avoid empty space */
+    box-sizing: border-box; /* Include padding in height/width */
+    background-color: #f0f0f0; /* Optional: subtle background for contrast */
 }
 
 .unique-card {
-    max-width: 100%;
-    width: 100%;
-    padding: 10px; /* Reduced padding inside the card */
+    max-width: 800px; /* Cap width for readability on large screens */
+    width: 100%; /* Full width on smaller screens */
+    padding: 15px; /* Slightly more padding for comfort */
     border-radius: 16px;
     background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     border: none;
-    margin: 5px 0; /* Reduced margin */
+    margin: 0; /* Remove margin to eliminate extra spacing */
+    box-sizing: border-box;
 }
 
-p {
+.unique-card p { /* Target <p> inside .unique-card specifically */
     font-family: Arial, sans-serif;
     color: #B0B0B0;
     line-height: 1.6;
+    margin: 0; /* Remove default <p> margins */
 }
 
-@media screen and (min-width: 1024px) {
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
     .unique-card {
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 10px; /* Slightly less padding on smaller screens */
+        max-width: 90%; /* Slightly narrower for tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .unique-container {
+        padding: 5px; /* Minimal padding on phones */
+    }
+    .unique-card {
+        padding: 8px;
+        max-width: 95%; /* Nearly full width on small screens */
+    }
+    .unique-card p {
+        font-size: 0.9rem; /* Smaller text for mobile */
     }
 }
 
