@@ -1137,4 +1137,10 @@ footer{
     white-space: nowrap;
 }
 
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    padding: 50px 20px; /* Adds more space on smaller screens */
+  }
+}
 
