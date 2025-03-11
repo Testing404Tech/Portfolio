@@ -137,31 +137,42 @@ ul.navlist{
     padding: 90px 8%;
 } 
 
+/* Ensure no unwanted spacing from body or html */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Container styling - First section after nav */
 .unique-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Centers vertically within its height */
-    padding: 10px; /* Keep minimal padding */
+    align-items: flex-start; /* Align content to top instead of center */
+    padding: 20px; /* Small padding for breathing room */
     width: 100%;
-    min-height: 100vh; /* Full viewport height to avoid empty space */
-    box-sizing: border-box; /* Include padding in height/width */
-    background-color: #f0f0f0; /* Optional: subtle background for contrast */
+    min-height: auto; /* Remove fixed height, let content dictate */
+    margin-top: 20px; /* Small gap below nav - adjust as needed */
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Optional: subtle background */
 }
 
+/* Card styling */
 .unique-card {
-    max-width: 800px; /* Cap width for readability on large screens */
+    max-width: 800px; /* Readable width */
     width: 100%; /* Full width on smaller screens */
-    padding: 15px; /* Slightly more padding for comfort */
+    padding: 15px; /* Consistent inner padding */
     border-radius: 16px;
     background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     border: none;
-    margin: 0; /* Remove margin to eliminate extra spacing */
+    margin: 0; /* No extra margins */
     box-sizing: border-box;
 }
 
-.unique-card p { /* Target <p> inside .unique-card specifically */
+/* Paragraph styling */
+.unique-card p {
     font-family: Arial, sans-serif;
     color: #B0B0B0;
     line-height: 1.6;
@@ -170,25 +181,28 @@ ul.navlist{
 
 /* Responsive adjustments */
 @media screen and (max-width: 1024px) {
+    .unique-container {
+        padding: 15px;
+    }
     .unique-card {
-        padding: 10px; /* Slightly less padding on smaller screens */
-        max-width: 90%; /* Slightly narrower for tablets */
+        max-width: 90%;
+        padding: 10px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .unique-container {
-        padding: 5px; /* Minimal padding on phones */
+        padding: 10px;
+        margin-top: 10px; /* Smaller gap on mobile */
     }
     .unique-card {
+        max-width: 95%;
         padding: 8px;
-        max-width: 95%; /* Nearly full width on small screens */
     }
     .unique-card p {
-        font-size: 0.9rem; /* Smaller text for mobile */
+        font-size: 0.9rem;
     }
 }
-
 
 .home{
     min-height: 40vh;
