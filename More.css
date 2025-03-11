@@ -187,6 +187,21 @@ section{
     overflow: visible; /* Ensure no parts are cut off */
 }
 
+/* Ensure no unwanted space above the cards on mobile */
+@media (max-width: 768px) {
+    .cards {
+        margin-top: -1rem; /* Adjust margin for smaller screens */
+        padding-top: 0 !important; /* Remove any extra padding at the top */
+    }
+}
+
+@media (max-width: 530px) {
+    .cards {
+        margin-top: -0.5rem; /* Slightly adjust for mobile */
+        padding-top: 0 !important; /* Force remove any white space */
+    }
+}
+
 .card {
     background: #000;
     box-shadow: rgba(0,0,0,0.18) 0px 2px 4px;
@@ -213,19 +228,6 @@ section{
 
 .card:hover img {
     transform: scale(1.1);
-}
-
-/* Responsive Fix for Small Screens */
-@media (max-width: 768px) {
-    .cards {
-        margin-top: -1rem; /* Adjust margin for smaller screens */
-    }
-}
-
-@media (max-width: 530px) {
-    .cards {
-        margin-top: -0.5rem; /* Slightly adjust for mobile */
-    }
 }
 
 
