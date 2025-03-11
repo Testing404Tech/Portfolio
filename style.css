@@ -137,34 +137,26 @@ section{
     padding: 90px 8%;
 }
 
-
-.home{
-    min-height: 40vh;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    grid-gap: 4em;
-    background: #000;
-    
+.home {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  text-align: center; /* Ensures text alignment */
+  min-height: 100vh; /* Makes sure it covers the full viewport */
+  padding: 20px; /* Prevents text from touching screen edges */
 }
 
-
-.hero-info h1{
-    font-size: 3.8rem;
-} 
-
-.hero-info{
-    margin-top: 3rem;
+.hero-info {
+  max-width: 800px; /* Limits text width for better readability */
+  width: 100%;
 }
 
-.hero-info h3{
-    color: var(--font-color);
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 1.1rem;
+.hero-info p {
+  text-align: center;
+  font-size: 18px; /* Adjust font size for readability */
+  line-height: 1.6;
 }
+
 
 .text-animate{
     width: 22.8rem;
